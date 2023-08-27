@@ -1,0 +1,344 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container_{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5vw 100vw 10vw;
+    grid-template-areas: "m"
+                         "m"
+                         "f";
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5vw;
+    background-color: #FCE44D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+    box-shadow: 0px 0px 50px black;
+    z-index: 10;
+}
+    header a img{
+        width: 20vw;
+    }
+
+main{
+    grid-area: m;
+    background-color: #fff;
+    background-image: url("imgs/backgroud1.png");
+    background-size: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .banner{
+        width: 100%;
+        height: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner_text{
+        background-image: url("imgs/undertale.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 85%;
+        height: 36vw;
+        border-radius: 2vw;
+        box-shadow: 0px 0px 50px black;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .banner_text p{
+        width: 70vw;
+        font-family: 'Chango', cursive;
+        font-size: 3vw;
+        color: white;
+        text-shadow: 0px 0px 5px black;
+        text-indent: 1.5em;
+        margin-left: 1vw;
+    }
+    .content{
+        width: 80%;
+        height: 45vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "bl1 bl2"
+                             "bl3 bl4";
+        gap: 2vw;
+    }
+    .content div{
+        border-radius: 1vw;
+        box-shadow: 0px 0px 50px black;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: transform 0.2s ease-in-out;  
+    }
+    .content div:hover{
+    transform: scale(1.1);
+    z-index: 1;
+
+    }
+    .content a{
+        border-radius: 1vw;
+        box-shadow: 0px 0px 50px black;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: transform 0.2s ease-in-out;  
+    }
+    .content a:hover{
+        transform: scale(1.1);
+    z-index: 1;
+    }
+
+    #bl1{
+        grid-area: bl1;
+        background-image: url("imgs/Hollow_Knight_bl.png");
+    }
+    #bl2{
+        grid-area: bl2;
+        background-image: url("imgs/undertale_bl.png");
+    }
+    .bl3{
+        grid-area: bl3;
+        background-image: url("imgs/Deltarune_bl.png");
+    }
+    .bl4{
+        grid-area: bl4;
+        background-image: url("imgs/celest_bl.png");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    grid-area: f;
+    background-color: #F5BA41;
+    box-shadow: 0px 0px 50px black;
+}
+    .copi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-family: 'Chango', cursive;
+        font-size: 1vw;
+        color: white;
+        text-shadow: 0px 0px 5px black;
+    }
+    .footer_imgs{
+        display: flex;
+        justify-content: space-between;
+        width: 13%;
+        margin-bottom: 1vw;
+    }
+    .footer_imgs img{
+        width: 3vw;
+
+    }
+
+    .haha img {
+        width: 100%;
+        border-radius: 1vw;
+    }
+
+    .content2{
+        margin-top: 30%;
+        width: 50%;
+        height: 45vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "bl12 bl22 bl32"
+                             "bl42 bl52 bl62"
+                             "bl72 bl82 bl92";
+        gap: 2vw;
+    }
+    .content2 div{
+        border-radius: 1vw;
+        box-shadow: 0px 0px 50px black;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 25vw;
+        background-position: center;
+        transition: transform 0.2s ease-in-out;  
+        display: flex;
+        align-items: end;
+        text-shadow: 5px 5px 10px black;
+    }
+    .content2 div:hover{
+        transform: scale(1.1);
+        z-index: 1;
+
+    }
+    .content2 a{
+        border-radius: 1vw;
+        box-shadow: 0px 0px 50px black;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: transform 0.2s ease-in-out;  
+    }
+    .content2 a:hover{
+        transform: scale(1.1);
+        z-index: 1;
+    }
+
+    .haha1 {
+        grid-area: bl12;
+        background-image: url("imgs/imgs2/cachorro.webp");
+    }
+    .haha2 {
+        grid-area: bl22;
+        background-image: url("imgs/imgs2/flowey.webp");
+    }
+    .haha3 {
+        grid-area: bl32;
+        background-image: url("imgs/imgs2/frisk.webp");
+    }
+    .haha4 {
+        grid-area: bl42;
+        background-image: url("imgs/imgs2/metatton.webp");
+    }
+    .haha5 {
+        grid-area: bl52;
+        background-image: url("imgs/imgs2/papyrus.webp");
+    }
+    .haha6 {
+        grid-area: bl62;
+        background-image: url("imgs/imgs2/sansssssssssssssssssssssssssssss.webp");
+    }
+    .haha7 {
+        grid-area: bl72;
+        background-image: url("imgs/imgs2/tem.webp");
+    }
+    .haha8 {
+        grid-area: bl82;
+        background-image: url("imgs/imgs2/toriel.webp");
+    }
+    .haha9 {
+        grid-area: bl92;
+        background-image: url("imgs/imgs2/undyne.webp");
+    }
+
+    .content3 p {
+        font-size: 24px;
+        text-align:start;
+        color:white;
+        padding: 12px;
+    }
+
+    .haha img {
+        width: 100%;
+        border-radius: 1vw;
+    }
+
+    .content3{
+        margin-top: 30%;
+        width: 50%;
+        height: 45vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "bl123 bl223 bl323"
+                             "bl423 bl523 bl623"
+                             "bl723 bl823 bl923";
+        gap: 2vw;
+    }
+    .content3 div{
+        border-radius: 1vw;
+        box-shadow: 0px 0px 50px black;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 25vw;
+        background-position: center;
+        transition: transform 0.2s ease-in-out;  
+        display: flex;
+        align-items: end;
+        text-shadow: 5px 5px 10px black;
+    }
+    .content3 div:hover{
+        transform: scale(1.1);
+        z-index: 1;
+
+    }
+    .content3 a{
+        border-radius: 1vw;
+        box-shadow: 0px 0px 50px black;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: transform 0.2s ease-in-out;  
+    }
+    .content3 a:hover{
+        transform: scale(1.1);
+        z-index: 1;
+    }
+
+    .hahaha1 {
+        grid-area: bl123;
+        background-image: url("imgs/imgs3/caterpee.webp");
+    }
+    .hahaha2 {
+        grid-area: bl223;
+        background-image: url("imgs/imgs3/esquecionome.webp");
+    }
+    .hahaha3 {
+        grid-area: bl323;
+        background-image: url("imgs/imgs3/eunaodurmofaz5dias.webp");
+    }
+    .hahaha4 {
+        grid-area: bl423;
+        background-image: url("imgs/imgs3/hollow.webp");
+    }
+    .hahaha5 {
+        grid-area: bl523;
+        background-image: url("imgs/imgs3/horneet2.webp");
+    }
+    .hahaha6 {
+        grid-area: bl623;
+        background-image: url("imgs/imgs3/hornet.webp");
+    }
+    .hahaha7 {
+        grid-area: bl723;
+        background-image: url("imgs/imgs3/mina.webp");
+    }
+    .hahaha8 {
+        grid-area: bl823;
+        background-image: url("imgs/imgs3/shadow.webp");
+    }
+    .hahaha9 {
+        grid-area: bl923;
+        background-image: url("imgs/imgs3/zote.webp");
+    }
+
+    .content2 p {
+        font-size: 24px;
+        text-align:start;
+        color:white;
+        padding: 12px;
+    }
